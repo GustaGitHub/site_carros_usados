@@ -1,0 +1,77 @@
+
+[
+   {
+      "id" : 1,
+      "brand" : "Ferrari",
+      "model" : "488",
+      "images" : {
+         "image1" : "https://cdn.motor1.com/images/mgl/vyjQb/s1/ferrari-488-pista-prova-sul-circuito-di-fiorano.webp",
+         "image2" : "https://motorshow.com.br/wp-content/uploads/sites/2/2019/07/7_ms429_ferrari-488_1.jpg"
+      },
+      "year" : "2019", 
+      "color" : "Vermelho",
+      "km" : "1000",
+      "price" : "2.403.000",
+      "advertiser" : "Javascript Motors" 
+   },
+
+   {
+      "id" : 2,
+      "brand" : "Fiat",
+      "model" : "Punto",
+      "images" : {
+         "image1":"http://4.bp.blogspot.com/-2AcT-5uFgqQ/VE5VC-22zBI/AAAAAAAB5B8/3mzQ4YKwu04/s1600/Fiat%2BPunto%2BEssence%2B2015%2B-Série%2BSP%2B(2).jpg",
+         "image2":"https://2.bp.blogspot.com/-69QprkUyDVE/UA7Ak2k4lHI/AAAAAAAAU7g/SbVFW3peOJM/s1600/Fiat-Punto-Attractive-2013-traseira.jpg"
+      },
+      "year" : "2009",
+      "color" : "Branco",
+      "km" : "150.000",
+      "price" : "35.670",
+      "advertiser" : "Phyton Cars"
+   },
+   
+   {
+      "id" : 3,
+      "brand" : "Lamborghini",
+      "model" : "Gallardo",
+      "images" : {
+         "image1" : "https://www.revistafullpower.com.br/wp-content/uploads/2018/02/lambo-gallardo-tt-spotted-frankfurt-1-1140x640.jpg",
+         "image2" : "https://st-gdefon.gallery.world/wallpapers_original/434005_gallery.world.jpg"
+      },
+      "year" : "2009",
+      "color" : "Laranja",
+      "km" : "10.000",
+      "price" : "635.670",
+      "advertiser" : "COBOL Motors"
+   },
+
+   {
+      "id" : 4,
+      "brand" : "Toyota",
+      "model" : "Prius",
+      "images" : {
+         "image1":"https://2.bp.blogspot.com/-YRAMGiQEK04/V1arG0OVNsI/AAAAAAAAxdI/ieOOfdNJWlcXlay8hLMfhk46JIWE8apMQCLcB/s1600/novo-Toyota-Prius-2017%2B%252817%2529.jpg",
+         "image2":"https://4.bp.blogspot.com/-mPuPgb_F0A4/V1aq275LDqI/AAAAAAAAxco/dfZJ9U2PBxAvkhK1EABbrVz7fwjAPyFcgCLcB/s1600/novo-Toyota-Prius-2017%2B%25281%2529.jpg"
+      },
+      "year" : "2020",
+      "color" : "Prata",
+      "km" : "90.000",
+      "price" : "155.670",
+      "advertiser" : "COBOL Motors"
+   },
+
+   {
+      "id" : 5,
+      "brand" : "Fiat",
+      "model" : "Uno",
+      "images" : {
+         "image1" : "https://uno.fiat.com.br/content/dam/fiat/products/195/a4z/2/2021/page/360/806/00.jpg.thumb.1280.1280.png",
+         "image2" : "https://uno.fiat.com.br/content/dam/fiat/products/195/a4z/2/2021/page/360/806/15.jpg.thumb.1280.1280.png"
+      },
+      "year" : "2020",
+      "color" : "Preto",
+      "km" : "55.240",
+      "price" : "57.000",
+      "advertiser" : "C# Automobilist"
+   }
+]
