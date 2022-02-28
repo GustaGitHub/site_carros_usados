@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import api from '../../services/api'
-import { useParams, useHistory, Link, Redirect } from "react-router-dom";
-import { Price, MainDiv, DivRight, DivBtn, BtnCarousel, FlexRow, OfferBtn, CenterBtn, Image } from "./styled";
+import { useParams, useHistory} from "react-router-dom";
+import { Price, MainDiv, DivRight, DivImgCarousel, ImgCarousel, FlexRow, OfferBtn, CenterBtn, Image } from "./styled";
 
 function Product(){
    const [car, setCar] = useState({}) 
@@ -23,7 +23,8 @@ function Product(){
                history.push('/page_not_found')
             }   
          })
-         .catch(err => {
+         .catch((err) => {
+            history.push('/page_not_found')
             console.log(err)
          })
       }
@@ -56,35 +57,31 @@ function Product(){
                   <Image src={car.images.image1} alt="#" width='400px' height='320px' id="img1"/>
                   <Image src={car.images.image2} alt="#" width='400px' height='320px' id="img2" style={{display:'none'}}/>
                   <br />
-                  <DivBtn>
-                     <BtnCarousel onClick={()=>displayImage(1)}>
-                        {'<'}
-                     </BtnCarousel>
-                     <BtnCarousel onClick={()=>displayImage(2)}>
-                        {'>'}
-                     </BtnCarousel>
-                  </DivBtn>
+                  <DivImgCarousel>
+                     <ImgCarousel src={car.images.image1} onClick={()=>displayImage(1)}/>
+                     <ImgCarousel src={car.images.image2} onClick={()=>displayImage(2)} style={{marginLeft: '5px'}}/>
+                  </DivImgCarousel>
                </div>
-            <DivRight>
-               <Price>R$ {car.price}</Price>
-               <h3><strong>
-                  {car.brand} {car.model}
-               </strong></h3>
-               <hr />
-               <br />
-                  <h4>Ano: {car.year}</h4>
-               <br />
-                  <h4>KM: {car.km}</h4>
-               <br />
-                  <h4>{car.color}</h4>
-               <br />
-                  <p>Anunciado por: <strong>{car.advertiser}</strong></p>
-                     <CenterBtn>
-                        <OfferBtn>
-                           Faça uma Proposta
-                        </OfferBtn>
-                     </CenterBtn>
-            </DivRight>
+               <DivRight>
+                  <Price>R$ {car.price}</Price>
+                  <h3><strong>
+                     {car.brand} {car.model}
+                  </strong></h3>
+                  <hr />
+                  <br />
+                     <h4>Ano: {car.year}</h4>
+                  <br />
+                     <h4>KM: {car.km}</h4>
+                  <br />
+                     <h4>{car.color}</h4>
+                  <br />
+                     <p>Anunciado por: <strong>{car.advertiser}</strong></p>
+                        <CenterBtn>
+                           <OfferBtn>
+                              Faça uma Proposta
+                           </OfferBtn>
+                        </CenterBtn>
+               </DivRight>
             </FlexRow>
          </MainDiv>
        </>)}

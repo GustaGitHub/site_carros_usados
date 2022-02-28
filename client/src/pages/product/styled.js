@@ -20,33 +20,26 @@ export const MainDiv = styled.div`
       height: 130vh;
    }
 `
-export const DivBtn = styled.div`
+export const DivImgCarousel = styled.div`
    display: flex;
-   justify-content: space-around;
+   justify-content: flex-start;
    margin-top: 2.5%;
+   box-sizing: border-box;
    
    @media (max-width: 415px){
       margin-top: 4%;
       margin-bottom: 4%;
    }
 `
-export const BtnCarousel = styled.button`
-   padding: 14px;
-   width: 65px;
-   font-size: 15pt;
-   font-weight: bolder;
-   border: none;
-   border-radius: 5px;
-   background-color: rgb(244, 95, 0);
-   color: white;
-   cursor: pointer;
-   
-   :hover{
-      background-color: rgb(155, 75, 1);
-   }
+export const ImgCarousel = styled.input.attrs({
+   type : 'image'
+})`
+   opacity: 0.5;
+   height: 90px;
+   width: 90px;
 
-   @media (max-width: 415px){
-      width: 75px;
+   :hover{
+      opacity: 1;
    }
 `
 export const DivRight = styled.div`
